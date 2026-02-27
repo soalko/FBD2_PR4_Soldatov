@@ -1,14 +1,9 @@
-# Демо‑проект к практикам 3–4 (Frontend + Backend)
+# Демо‑проект к практикам 3–5
 
-Этот репозиторий — **заготовка** для практических:
-- **Практика 3:** JSON + API + Postman (свой API + внешнее API)
-- **Практика 4:** React + API (frontend ↔ backend)
 
 ## Структура
 - `backend/` — Express API (CRUD /api/products)
 - `frontend/` — React (Vite) клиент
-- `docs/student-handout.md` — методичка для студентов
-- `docs/teacher-notes.md` — заметки для преподавателя
 
 ## Быстрый старт
 ### 1) Backend
@@ -27,6 +22,12 @@ npm run dev
 ```
 UI: `http://localhost:3001`
 
-## Проверка API
-- Рекомендуется: Postman
-- Запасной вариант: `backend/api.http` (VS Code + REST Client)
+## Реализовано:
+
+### Api для CRUD-операций товаров
+- /products/id - RUD для товара по id
+- /products - CRUD для всех товаров
+
+### Swagger-документация для всех вышеперечисленных операций
+
+### Фронтенд для списка товаров

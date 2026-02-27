@@ -7,21 +7,21 @@ import { api } from "./apiClient";
  */
 
 export async function getProducts() {
-    // return (await api.get
-  throw new Error("TODO: реализуйте getProducts()");
+    const response = await api.get('/products');
+    return response.data;
 }
 
 export async function createProduct(payload) {
-  // return (await api.post
-  throw new Error("TODO: реализуйте createProduct(payload)");
+    const response = await api.post('/products', payload);
+    return response.data;
 }
 
 export async function updateProduct(id, patch) {
-  // return (await api.patch
-  throw new Error("TODO: реализуйте updateProduct(id, patch)");
+    const response = await api.patch(`/products/${id}`, patch);
+    return response.data;
 }
 
 export async function deleteProduct(id) {
-  // return (await api.delete
-  throw new Error("TODO: реализуйте deleteProduct(id)");
+    const response = await api.delete(`/products/${id}`);
+    return response.data;
 }
